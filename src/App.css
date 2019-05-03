@@ -1,3 +1,7 @@
+html, body{
+  background-color: dimgray;
+}
+
 .App {
   text-align: center;
 }
@@ -5,7 +9,7 @@
 .App .Aggregate,
 .App .Filter,
 .App  .playlist{
-  color: mediumpurple;
+  color: rgb(217, 205, 240);
 }
 
 .App-logo {

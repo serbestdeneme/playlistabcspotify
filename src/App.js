@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 let defaultSytle={
-  color:'blueviolet'
+  color: 'rgb(217, 205, 240)'
 };
 
 class Aggregate extends React.Component{
