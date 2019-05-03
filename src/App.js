@@ -1,8 +1,7 @@
 import React from 'react';
 import './App.css';
-let defaultTextColor = 'blueviolet'
 let defaultSytle={
-  color:defaultTextColor
+  color:'blueviolet'
 };
 
 class Aggregate extends React.Component{
@@ -42,7 +41,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Tittle </h1>
+      <h1 style={{defaultSytle,'font-size':"54px"}}>Tittle </h1>
       <Aggregate/>
       <Aggregate/>
       <Filter/>
