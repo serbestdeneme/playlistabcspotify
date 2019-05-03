@@ -1,8 +1,17 @@
 import React from 'react';
 import './App.css';
+
 let defaultSytle={
   color: 'rgb(217, 205, 240)'
 };
+
+let fakeServerDate={
+  user:{
+    name: "Okan"
+  }
+};
+
+
 
 class Aggregate extends React.Component{
   render(){
@@ -15,6 +24,7 @@ class Aggregate extends React.Component{
 }
 
 class Filter extends React.Component{
+
   render(){
     return(
       <div style={defaultSytle}>
@@ -37,11 +47,27 @@ class Playlist extends React.Component{
   }
 }
 
+class Title extends React.Component{
+  render(){
+      return(
+        <div>
+      <h1 style={{defaultSytle,'font-size':"54px"}}>
+      {fakeServerDate.user.name}'s playlist 
+      </h1>
+
+        </div>
+
+      )
+  }
+}
+
 function App() {
 
   return (
+    
     <div className="App">
-      <h1 style={{defaultSytle,'font-size':"54px"}}>Tittle </h1>
+
+      <Title/>
       <Aggregate/>
       <Aggregate/>
       <Filter/>
